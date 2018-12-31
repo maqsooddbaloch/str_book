@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <div>
+          {{#if user}}
+        <title>Welcome.{{user.firstname}}</title>
+        
+        {{else}}
+        <title>thempleite - Responsive Website Template</title>
+        {{/if}}
+    </div>
+     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" type="text/css" href="plugins/headereffects/css/component.css">
+    <link rel="stylesheet" type="text/css" href="plugins/headereffects/css/normalize.css" />
+    <link href="plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css"
+        media="screen" />
+    <!-- BEGIN CORE CSS FRAMEWORK -->
+    <link href="plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- END CORE CSS FRAMEWORK -->
+    <!-- BEGIN CSS TEMPLATE -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/magic_space.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+    <!-- END CSS TEMPLATE -->
+    <script type="text/javascript" src="plugins/jquery-1.8.3.min.js"></script>
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="plugins/slider-plugin/js/slider1.min.js"></script>
+    <script type="text/javascript" src="plugins/slider-plugin/js/slider2.min.js"></script>
+      <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="plugins/slider-plugin/css/settings.css"
+        media="screen" />
+</head>
+<!-- END HEAD -->
+<body>
+    <div class="main-wrapper">
+        <header id="ha-header" class="ha-header ha-header-hide ">
+            <div class="ha-header-perspective">
+                <div class="ha-header-front navbar navbar-default">
+                    <div class="compressed">
+                        <div class="navbar-header">
+                            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
+                                type="button">
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                    class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand compressed">
+                                <img src="img/logo_condensed.png" alt="" data-src="img/logo_condensed.png"
+                                    data-src-retina="img/logo2x.png" width="119" height="22" /></a>
+                     
+                </div>
+            </div>
+        </header>
+        <div class="section ha-waypoint" data-animate-down="ha-header-hide" data-animate-up="ha-header-hide">
+            <div role="navigation" class="navbar navbar-transparent navbar-top">
+                <div class="container">
+                    <div class="compressed">
+                        <div class="navbar-header">
+                            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
+                                type="button">
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                    class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                  {{#if user}}
+                                  <div>
+                                      
+                                
+        <h1>Welcome {{user.firstName}}</h1>
+        
+        {{else}}
+        <h1>Welcome {{user.firstName}}</h1>
+    
+        {{/if}}
+                         </div>        
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                {{#if user}}
+        <li><a href="/dashboard">Welcome {{user.firstName}}</a></li>
+        <li><a href="/stories"><i class="fa fa-book"></i> Public Stories</a></li>
+        <li><a href="/stories/add"><i class="fa fa-user"></i> Add Story</a></li>
+        <li><a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+        {{else}}
+        <li><a href="/stories"><i class="fa fa-book"></i> Public Stories</a></li>
+        <li><a href="/auth/google"><i class="fa fa-user"></i> Add story</a></li>
+        <li><a href="/auth/google"><i class="fa fa-google"></i> login</a></li>
+        {{/if}}
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <!--BEGIN SLIDER -->
+            <div class="tp-banner-container">
+                <div class="tp-banner" id="home">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                            <!-- MAIN IMAGE -->
+                            <img src="img/bg/slide_one.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+                            <div class="tp-caption mediumlarge_light_white_center sft tp-resizeme slider" data-x="center"
+                                data-hoffset="0" data-y="80" data-speed="500" data-start="800" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                <h2 class="text-white custom-font title ">
+                                    We Create<br>
+                                    Brands & Marketing
+                                    <br />
+                                    Strategies for Customers</h2>
+                            </div>
+                            <div class="tp-caption sfb slider tp-resizeme slider" data-x="center" data-hoffset="0"
+                                data-y="320" data-speed="800" data-start="1000" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                  {{#if user}}
+                                <a href="/stories/add" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">Add Story Now</a>
+                                {{else}}
+                                <a href="/auth/google" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">LOGIN</a>
+                                {{/if}}</a>
+                            </div>
+                        </li>
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                            <!-- MAIN IMAGE -->
+                            <img src="img/bg/picture-1.jpg" alt="slidebg2" data-bgfit="cover" data-bgposition="center center"
+                                data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+                            <div class="tp-caption mediumlarge_light_white_center sft tp-resizeme slider" data-x="center"
+                                data-hoffset="0" data-y="120" data-speed="500" data-start="800" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                <h2 class="text-white custom-font title ">
+                                    We Craft<br>
+                                    Our Work to Last Perfection!</h2>
+                            </div>
+                            <div class="tp-caption sfb slider tp-resizeme slider" data-x="center" data-hoffset="0"
+                                data-y="300" data-speed="800" data-start="1000" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                  {{#if user}}
+                                <a href="/stories/add" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">Add Story Now</a>
+                                {{else}}
+                                <a href="/auth/google" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">LOGIN</a>
+                                {{/if}}</a>
+                            </div>
+                            <div class="tp-caption fade slider tp-resizeme slider" data-x="center" data-hoffset="0"
+                                data-y="360" data-speed="500" data-start="800" data-easing="Power4.easeOut" data-endspeed="300"
+                                data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                <a href="#" class="text-white m-r-10">or view our pricing</a>
+                            </div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                            <!-- MAIN IMAGE -->
+                            <img src="img/bg/picture-2.jpg" alt="slidebg2" data-bgfit="cover" data-bgposition="center center"
+                                data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+                            <div class="tp-caption mediumlarge_light_white_center sft tp-resizeme slider" data-x="center"
+                                data-hoffset="0" data-y="120" data-speed="500" data-start="800" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                <h2 class="text-white custom-font title ">
+                                    We Build the Trust<br>
+                                    That Our Clients Needs</h2>
+                            </div>
+                            <div class="tp-caption sfb slider tp-resizeme slider" data-x="center" data-hoffset="0"
+                                data-y="300" data-speed="800" data-start="1000" data-easing="Power4.easeOut"
+                                data-endspeed="300" data-endeasing="Power1.easeIn" data-captionhidden="off" style="z-index: 6">
+                                         {{#if user}}
+                                <a href="/stories/add" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">Add Story Now</a>
+                                {{else}}
+                                <a href="/auth/google" class="btn btn-info btn-lg  btn-large m-r-10" class="fa fa-google left">LOGIN</a>
+                                {{/if}}</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer">
+                    </div>
+                </div>
+            </div>
+            <!--END SLIDER
+		
+
+	-->
+    <div class="container">
+        {{{body}}}
+    </div>
+        </div>
+        
+         </div>
+     
+    <script src="plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="plugins/waypoints.min.js"></script>
+    <script type="text/javascript" src="plugins/parrallax/js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="plugins/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-appear/jquery.appear.js"></script>
+    <script src="plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/core.js"></script> 
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+
+  <script>
+    $(document).ready(() => {
+      $('.button-collapse').sideNav();
+      $('select').material_select();
+    });
+
+    CKEDITOR.replace('txt',{
+      plugins: 'wysiwygarea,toolbar,basicstyles,link'
+    });
+  </script>
+        
+</body>
+</html>
