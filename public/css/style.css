@@ -3201,3 +3201,21 @@ margin-bottom:0px;
 	color: red;
 	display:none;
 }
+
+.maqsood{
+	margin: 142px 80px 44px 550px;
+}
+
+.hme{
+	transition: all 0s ease 0s;
+    min-height: 0px;
+    min-width: 0px;
+    white-space: nowrap;
+    line-height: 72px;
+    border-width: 0px;
+    margin: -50px 0px 22px;
+    padding: 0px;
+    font-size: 45px;
+        color: #26a69a !important;
+}
+

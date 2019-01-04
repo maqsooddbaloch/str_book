@@ -9,7 +9,7 @@ const StorySchema = new Schema({
   },
   body:{
     type: String,
-    required: true
+    //required: true
   },
   status: {
     type: String,
